@@ -1,0 +1,793 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(3, 3, 22);
+    display: flex;
+    
+}
+
+.nav{
+    width: 99%;
+    height: 7%;
+    background-color: rgb(2, 2, 17);
+    position: absolute;
+    border-radius: 07px;
+}
+
+
+
+.nav:hover::after{
+    animation-name: searc;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    content: "";
+    background-color: rgb(25, 185, 4);
+    width: 0%;
+    height:3px;
+    top: 2px;
+    position: absolute;
+
+}
+
+@keyframes searc{
+    
+    0%{
+        width:0%;
+        left: 0%;
+    }
+ 
+    100%{
+        width:100%;
+        left: 0%;
+        top: 0%;
+    }
+}
+
+
+
+UL{
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+    
+   
+    
+}
+
+.box{
+    margin-left: 610px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 08px;
+    align-items: center;
+   
+
+}
+.box:hover{
+    border: 2px solid white;
+    transition: 1s;
+    background-color:white;
+}
+
+
+ul li{
+     text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 400;
+   margin-right: 2px;
+
+
+}
+
+
+li{
+    height: 2px;
+    padding-bottom: 15px;
+    font-size: xx-large;
+    font-weight: 800;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+    background-color: transparent;
+    border-radius: 7px;
+    box-shadow:5px;
+}
+
+li:hover::after{
+    animation-name: line;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 2%;
+    background-color: rgb(245, 221, 2);
+  
+}
+@keyframes line{
+    0%{
+        width: 0%;
+        left: 0px;
+
+    }
+    100%{
+        width: 100%;
+        left: 0%;
+    }
+}
+
+ul li a{
+    color: aliceblue;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+ul li a:hover{
+    transition: 0.7s;
+    background-color: transparent;
+    border-radius: 10px;
+   
+}
+
+.part2{
+    width: 100%;
+    height: 100%;
+    background-image: url(burger.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid wheat;
+}
+
+.part4{
+    width: 400px;
+    height: 600px;
+    background-color:transparent;
+    position: absolute;
+    top: 37%;
+    left: 06%;
+    align-items: center;
+  
+}
+
+h3{
+    position: absolute;
+font-size: 54px;
+font-weight: 500;
+text-transform:capitalize;
+color: aliceblue;
+transform: rotate(-0deg);
+-webkit-text-stroke-color: black;
+
+}
+
+.op{
+    color: rgb(251, 255, 0);
+    font-weight: 600;
+  
+   
+    
+    
+}
+
+.small{
+
+    font-size: 35px;
+    color: rgb(29, 248, 0);
+   
+  
+}
+
+.btt{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(241, 241, 0);
+    margin-top: 250px;
+    margin-left: 150px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btt:hover{
+    background-color: aqua;
+    transform: scale(1.3);
+}
+
+.part5{
+    height: 300px;
+    width: 300px;
+    background-image: url(burger1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 10px;
+    top: 45%;
+    right: 07%;
+    border: 2px solid white;
+}
+
+.part5:hover{
+    transform: scale(1.3) rotate(7deg);
+    transition: 0.3s;
+    
+}
+
+
+
+@media (min-width:320px) and (max-width:480px){
+   
+    
+    .main{
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(3, 3, 22);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        
+    }
+
+    .nav{
+        width: 95%;
+        height: 5%;
+        background-color: rgb(2, 2, 17);
+        position: absolute;
+        border-radius: 07px;
+    }
+
+
+    .small{
+        font-size: 19px;
+        
+    }
+
+    .btt{
+
+        width: 100px;
+        height: 37px;
+       margin-left: 30px;
+       margin-top: 200px;
+
+    }
+    
+ul li a{
+   
+    padding: 3px;
+    float: left;
+    
+
+}
+
+    .box{
+        margin-left: 10px;
+       margin-bottom: 40px;
+        height: 25px;
+       width: 40%;
+      
+    
+    }
+    .box:hover{
+        border: 2px solid rgb(219, 14, 14);
+        transition: 1s;
+        background-color:white;
+    }
+
+
+li a{
+   
+ font-size:14px;
+ margin-bottom: 20px;
+ margin-right: 2px;
+   
+ 
+   
+}
+
+li:hover::after{
+    animation-name: line;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 2%;
+    
+   
+  
+}
+@keyframes line{
+    0%{
+        width: 0%;
+        left: 0px;
+
+    }
+    100%{
+        width: 100%;
+        left: 0%;
+    }
+}
+
+
+.part4{
+    width: 10%;
+    height: 20%;
+    background-color:transparent;
+    position: absolute;
+    top: 28%;
+    left: 04%;
+    align-items: center;
+    letter-spacing: 3px;
+
+}
+
+h3{
+   
+font-size: 25px;
+font-weight: 100;
+left: 30px;
+
+}
+
+
+.part5{
+    height: 120px;
+    width: 120px;
+    top: 35%;
+    right: 04%;
+  
+}
+
+.ones{
+
+    margin: 35px;
+
+}
+
+.two{
+    margin-top:160%;
+   
+}
+
+.two .chicken{
+    width: 120px;
+    height: 470px;
+}
+
+
+
+.three .row{
+    flex-wrap: wrap;
+}
+
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    
+
+    .nav{
+        width: 98%;
+        height: 7%;
+      
+    }
+
+
+
+ul li a{
+   
+    padding: 7px;
+    float: left;
+    
+
+}
+
+    .box{
+        margin-left: 120px;
+         margin-bottom: 40px;
+        height: 30px;
+       width: 32%;
+      
+    
+    }
+
+    .box:hover{
+        border: 2px solid rgb(233, 10, 10);
+        transition: 1s;
+        background-color:white;
+    }
+
+li a{
+   
+ font-size:22px;
+ margin-bottom: 16px;
+ margin-right: 2px;
+   
+  
+}
+
+
+.part5{
+    height: 170px;
+    width: 200px;
+    top: 45%;
+    right: 04%;
+  
+}
+
+.ones{
+
+    margin: 35px;
+    
+}
+
+.two{
+    margin-top:40%;
+   
+}
+
+.two .chicken{
+    width: 300px;
+    height: 470px;
+}
+
+.three .row{
+
+     margin-left: 20%;
+    flex-wrap: wrap;
+}
+
+
+
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+    .nav{
+        width: 98%;
+        height: 7%;
+      
+    }
+
+
+        
+ul li a{
+    
+    
+    padding: 15px;
+    float: left;
+    
+
+}
+
+    .box{
+        margin-left: 700px;
+         margin-bottom: 40px;
+        height: 34px;
+       width: 23%;
+       position: absolute;
+      
+    
+    }
+
+    .box:hover{
+        border: 2px solid rgb(233, 10, 10);
+        transition: 1s;
+        background-color:white;
+    }
+
+li a{
+   
+
+ font-size:18px;
+ margin-bottom: 16px;
+ 
+   
+  
+}
+
+
+.part5{
+    height: 250px;
+    width: 250px;
+    top: 45%;
+    right: 04%;
+  
+}
+
+
+h3{
+    font-size: 55px;
+}
+
+.ones{
+
+    margin: 35px;
+
+}
+
+
+.two{
+    margin-top:35%;
+   
+}
+
+.two .chicken{
+    width: 300px;
+    height: 470px;
+}
+
+.three .row{
+
+    gap: 40px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+}
+
+
+}
+
+@media (min-width:1025px) and (max-width:1200px){
+
+    
+    .box{
+        margin-left: 710px;
+         margin-bottom: 40px;
+        height: 34px;
+       width: 28%;
+       position: absolute;
+      
+    
+    }
+
+    .box:hover{
+        border: 2px solid rgb(233, 10, 10);
+        transition: 1s;
+        background-color:white;
+    }
+
+li a{
+   
+
+ font-size:18px;
+ margin-bottom: 16px;
+ 
+   
+  
+}
+
+
+.part5{
+    height: 250px;
+    width: 250px;
+    top: 45%;
+    right: 04%;
+  
+}
+
+
+h3{
+    font-size: 55px;
+}
+
+.btt{
+    margin-top: 270px;
+}
+
+.two{
+    margin-top:17%;
+   
+}
+
+.two .chicken{
+    width: 300px;
+    height: 470px;
+}
+
+.three .row{
+    gap: 40px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+}
+
+
+}
+
+.one{
+
+    width: 100%;
+    height: 220px;
+}
+
+.one h2{
+
+    font-size: 50px;
+    color: green;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.ones{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    margin-top: -20px;
+    padding: 10px;
+    margin-left: 110px;
+    border-radius: 60px;
+    transition: 0.5s;
+}
+
+.ones:hover{
+
+    transform: scale(1.3);
+    background-color: red;
+}
+
+.two{
+
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+
+.chicken{
+
+    width: 500px;
+    height: 470px;
+    float: left;
+    cursor: pointer;
+}
+
+.two .head{
+     width: 1200px;
+    font-size: 50px;
+    color: rgb(44, 218, 1);
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+p{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.more{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 70px;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.more:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    background-color: aliceblue;
+    border: 2px solid rgb(156, 26, 26);
+}
+
+.three{
+
+    width: 100%;
+    height: 80vh;
+}
+
+.three .row{
+
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.col{
+
+    width: 400px;
+    height: 430px;
+    margin: 15px;
+    margin-left: 15px;
+}
+
+img{
+
+    width: 370px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+img:hover{
+
+    transform: scale(0.9) rotate(4deg);
+}
+
+
+h2{
+    font-size: 23px;
+    margin: 15px;
+    text-transform: capitalize;
+}
+
+.para{
+    font-size: 17px;
+    margin: 15px;
+    color: black;
+}
+
+.mores{
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 140px;
+    cursor: pointer;
+    background-color: yellow;
+    transition: 0.6s;
+}
+.mores:hover{
+
+    background-color: aliceblue;
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ h2{
+    height: 20px;
+    padding-bottom: 10px;
+    font-size: xx-large;
+    font-weight: 800;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+    background-color: aqua;
+    border-radius: 7px;
+    box-shadow:50px;
+}
+
+
+h2:hover::after{
+    animation-name: line;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 2%;
+    background-color: rgb(245, 221, 2);
+  
+}
+@keyframes line{
+    0%{
+        width: 0%;
+        left: 0px;
+
+    }
+    100%{
+        width: 100%;
+        left: 0%;
+    }
+}
+*/
